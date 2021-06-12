@@ -1,4 +1,3 @@
 FROM openjdk:11.0.11-jdk
-VOLUME /tmp
-COPY target/*.jar app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+RUN apt-get -y update
+RUN apt-get -y install git
