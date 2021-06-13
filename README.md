@@ -35,3 +35,10 @@ Important step
 - in jenkins navigate to `new item` > `Freestyle project`
 - follow screenshot
 [freestylejob](Instructions/job-restdataspring-configure.pdf)
+  
+* To add SonarQube
+- run `docker network create jenkins`
+- run `docker network connect jenkins {jenkins container name}`  
+- run `docker run -d --network=jenkins -p 9000:9000 --name sonarqube -e SOANR_ES_BOOTSTRP_CHECK_DISABLE=true sonarqube`
+after configuring sonar qube go to jenkins pipeline and add build step
+`invoke top-level Maven target` goal `sonar:sonar -Dsonar.projectKey={projectname_in_sonar} -Dsonar.host.url=http://sonarqube:9000 -Dsonar.login={TOKEN}`
