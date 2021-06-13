@@ -34,4 +34,4 @@ Important step
 
 - in jenkins navigate to `new item` > `Freestyle project`
 - follow screenshot
-![freestylejob](Instructions/job-restdataspring-configure.pdf)
+[freestylejob](Instructions/job-restdataspring-configure.pdf)
