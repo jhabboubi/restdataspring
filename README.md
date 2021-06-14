@@ -18,7 +18,8 @@ Instructions:
 - in case of macOS run `docker run -d -it -u root -p 8090:8080 -p 50000:50000 --name jenkins_container -v jenkins_home:/var/jenkins_home -v /var/run/docker.sock.raw:/var/run/docker.sock --restart unless-stopped jenkins11`  
 - once the container runs for the first time a temporary password is printed in the logs
 - open a browser and goto `localhost:8090` a greeting from jenkins asking for the temporary password
-- Navigate to `Manage Jenkins > Manage Plugins > click tap Available > search for docker`
+- navigate to `Manage Jenkins >  Global Tool Configuration > Maven > Add Maven > select the latest version of maven > Save`   
+- navigate to `Manage Jenkins > Manage Plugins > click tap Available > search for docker`
 - install the list of plugins:
     - CloudBees Docker Build and Publish plugin
     - Docker Pipeline
