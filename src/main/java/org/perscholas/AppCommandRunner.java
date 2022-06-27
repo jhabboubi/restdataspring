@@ -27,6 +27,8 @@ public class AppCommandRunner implements CommandLineRunner {
         studentRepo.save(new Student("erica", "erica@gmail.com"));
         studentRepo.save(new Student("cooper", "cooper@gmail.com"));
         studentRepo.save(new Student("test", "test@gmail.com"));
+        studentRepo.save(new Student("test123", "test123@gmail.com"));
+
 
 
 
